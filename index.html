@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maxillian | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo"> Maxillian The Buff</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Mwebaze Maxillian</span></h1>
+        <p class="tagline">IT Specialist | Graphic Designer | Web Developer | Database Designer</p>
+        <p class="intro">
+          I create clean, functional, and visually appealing digital solutions using HTML, CSS, graphic design skills, and thoughtful database architectures.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn secondary">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="hero-img.jpg" alt="The Buff">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am a BSIT student specializing in <strong>Web and Mobile Application Development and Databases</strong>. 
+            I enjoy building user-friendly interfaces and solving problems through technology.
+          </p>
+          <p>
+            My core skills include graphic design, HTML & CSS, database design, software installation, and computer troubleshooting. 
+            I love turning ideas into clean, responsive websites and well-structured databases.
+          </p>
+
+          <h3>Skills</h3>
+          <div class="skills">
+            <span>Graphic Design</span>
+            <span>HTML & CSS</span>
+            <span>Database Design</span>
+            <span>Software Installation</span>
+            <span>Computer Troubleshooting</span>
+          </div>
+        </div>
+        <div class="about-card">
+          <h3>Academic Background</h3>
+          <ul>
+            <li><i class="fas fa-graduation-cap"></i> Bachelor of Science in Information Technology</li>
+            <li><i class="fas fa-laptop-code"></i> Specialization: Web & Mobile Application Development</li>
+            <li><i class="fas fa-heart"></i> Interests: UI Design, Responsive Web, Relational Databases, Tech Support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        
+        <div class="project-card">
+          <img src="responsive.jpg" alt="Web Project">
+          <div class="project-info">
+            <h3>Responsive Portfolio Website</h3>
+            <p>A clean, mobile-friendly personal portfolio built from scratch using HTML and CSS.</p>
+            <div class="project-tags">HTML • CSS • Responsive Design</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="registration db.png" alt="Database Project">
+          <div class="project-info">
+            <h3>Student Management Database</h3>
+            <p>Designed and normalized a relational database for managing students, courses, and grades.</p>
+            <div class="project-tags">Database Design • MySQL • Normalization</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="contact-card">
+        <h2 class="section-title">Get in Touch</h2>
+        <p>I'm open to opportunities, collaborations, or just a friendly chat about tech.</p>
+        
+        <div class="contact-items">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <strong>Email</strong><br>
+              <a href="maxillianmwebaze@gmail.com">maxillianmwebaze@gmail.com</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <strong>Phone</strong><br>
+              <a href="tel:+256700123456">+256 700 123 456</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <div>
+              <strong>GitHub</strong><br>
+              <a href="https://github.com/maxillian" target="_blank">github.com/maxillian</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Maxillian Mwebaze. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
